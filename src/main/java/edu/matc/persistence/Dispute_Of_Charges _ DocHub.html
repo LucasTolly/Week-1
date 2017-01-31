@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://dochub.com/lucas3264063a/D2qYlE/dispute_of_charges?pg=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="fragment" content="!"> <script src="https://js-agent.newrelic.com/nr-1016.min.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script> window.prerenderReady = false; </script> <meta name="server_name" content="Fig">  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"494d88a3e9","applicationID":"21025970","transactionName":"dQsNEBAMWwlTQklXQ0YICgcDF14KWB8PWFdTHA==","queueTime":0,"applicationTime":51,"agent":""}</script> <script>(window.NREUM||(NREUM={})).loader_config={xpid:"VQUOWFVaDRACVVFQAggAVg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script> <link rel="author" href="http://plus.google.com/"> <link rel="publisher" href="http://plus.google.com/"> <meta name="twitter:site" content="https://dochub.com"> <meta name="twitter:creator" content="dochubapp"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1"> <link href="https://cdn.dochub.com/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"> <link rel="apple-touch-icon" href="https://dochub.com/favicon-64.png"> <link rel="icon" type="image/png" sizes="64x64" href="https://dochub.com/favicon-64.png"> <meta name="currentUserPayload" content="{&quot;user&quot;:{&quot;id&quot;:11313988,&quot;email&quot;:&quot;tollylucas@gmail.com&quot;,&quot;slug&quot;:&quot;lucas3264063a&quot;,&quot;name&quot;:&quot;Lucas&quot;,&quot;company_name&quot;:null,&quot;url&quot;:null,&quot;location&quot;:null,&quot;last_sign_in_at&quot;:&quot;2016-12-02T16:31:13.000-06:00&quot;,&quot;upload&quot;:&quot;https://s3.amazonaws.com/dh-img-user/11313988.jpg?1466607501&quot;,&quot;upload_updated_at&quot;:&quot;2016-06-22T09:58:21.000-05:00&quot;,&quot;updated_at&quot;:&quot;2017-01-25T22:35:20.000-06:00&quot;,&quot;created_at&quot;:&quot;2016-06-22T09:58:21.000-05:00&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;has_session_token&quot;:false,&quot;authentication_ids&quot;:[12850875],&quot;user_preference_ids&quot;:[],&quot;organization_role_ids&quot;:[],&quot;organization_ids&quot;:[],&quot;pro_subscription_id&quot;:null,&quot;site_license_pro_subscription_id&quot;:null,&quot;entity_id&quot;:&quot;lucas3264063a&quot;,&quot;fax_number_provision_id&quot;:null},&quot;authentications&quot;:[{&quot;id&quot;:12850875,&quot;provider&quot;:&quot;google_oauth2&quot;,&quot;uid&quot;:&quot;116266444102604087129&quot;,&quot;token&quot;:&quot;ya29.Gl3fAyAetjFcoYLLJrF8HnmCRZ2QkoLEk2iqhJb7beI7jpHzz3cgzOT1XaTaBBy8gFwmAPhvf8JK2c1I7JB-cRW5ZCR9fuSena_RVcIudNOckvI3VIbefgy2o282I_g&quot;,&quot;scope&quot;:&quot;https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.install&quot;,&quot;email&quot;:&quot;tollylucas@gmail.com&quot;,&quot;status&quot;:&quot;verified&quot;,&quot;confirmation_sent_at&quot;:null,&quot;created_at&quot;:&quot;2016-06-22T09:58:21.000-05:00&quot;,&quot;updated_at&quot;:&quot;2017-01-25T22:35:20.000-06:00&quot;,&quot;user_id&quot;:11313988}],&quot;user_preferences&quot;:[],&quot;organizations&quot;:[],&quot;pro_subscriptions&quot;:[],&quot;entities&quot;:[{&quot;slug&quot;:&quot;lucas3264063a&quot;,&quot;updated_at&quot;:&quot;2016-06-22T09:58:21.000-05:00&quot;,&quot;created_at&quot;:&quot;2016-06-22T09:58:21.000-05:00&quot;,&quot;user_id&quot;:11313988,&quot;organization_id&quot;:null,&quot;membership_id&quot;:null}],&quot;fax_number_provisions&quot;:[]}"> <meta name="constantsPayload" content="{&quot;APPLICATION_VERSION&quot;:&quot;1.6.6&quot;}"> <meta name="flash-messages" content="[]"> <meta name="latest-release-note" content="{&quot;release_note&quot;:{&quot;id&quot;:126,&quot;description&quot;:&quot;[Alexa.com](http://www.alexa.com/siteinfo/dochub.com) now ranks DocHub as the 974th most visited site in the United States!&quot;,&quot;update_type&quot;:&quot;FEATURE&quot;,&quot;title&quot;:&quot;DocHub now ranks as one of the top 1,000 most popular sites in the US!&quot;,&quot;released_at&quot;:&quot;2016-12-16T10:21:33.000-06:00&quot;,&quot;created_at&quot;:&quot;2016-12-16T10:21:33.000-06:00&quot;,&quot;updated_at&quot;:&quot;2016-12-16T10:21:33.000-06:00&quot;}}"> <meta name="isOldBrowser" content="false"> <meta name="importJobUuid" content="768ce2f09b63b7c4360b57d847a6080a"> <meta content="authenticity_token" name="csrf-param"> <meta content="/JqDPcI6Nzs9vB6xGp/q3wduMJ1AMGbLeSul31vFZCo=" name="csrf-token"> <title>Dispute_Of_Charges | DocHub</title> <meta content="DocHub" property="og:site_name"> <meta content="summary" name="twitter:card"><meta content="https://dochub.com/import-document" property="og:url"> <meta content="https://dochub.com/import-document" name="twitter:url"> <meta content="https://dochub.com/import-document" name="url"> <meta content="Dispute_Of_Charges" property="og:title"> <meta content="Dispute_Of_Charges" name="twitter:title"> <meta content="Dispute_Of_Charges" name="title"> <meta content="" property="og:description"> <meta content="" name="twitter:description"> <meta content="" name="description"> <meta content="https://cdn.dochub.com/assets/img/logo/wordmark-ac249b003f2fbcdfe5aad3155a004b0c.svg" property="og:image"> <meta content="https://cdn.dochub.com/assets/img/logo/wordmark-ac249b003f2fbcdfe5aad3155a004b0c.svg" name="twitter:image"> <meta content="https://cdn.dochub.com/assets/img/logo/wordmark-ac249b003f2fbcdfe5aad3155a004b0c.svg" name="image"> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-6088184-14', { 'userId': '11313988' }, 'auto');
+    ga('require', 'displayfeatures');</script> <link href="./Dispute_Of_Charges _ DocHub_files/vendor-cf17c658031d804194b19d687be3cbf4.css" media="screen" rel="stylesheet"> <link href="./Dispute_Of_Charges _ DocHub_files/dochub-64896722337c522b3174f0356939cdd0.css" media="screen" rel="stylesheet"> <style type="text/css">.jp-card.jp-card-safari.jp-card-identified .jp-card-front:before, .jp-card.jp-card-safari.jp-card-identified .jp-card-back:before {   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%); }  .jp-card.jp-card-ie-10.jp-card-flipped, .jp-card.jp-card-ie-11.jp-card-flipped {   -webkit-transform: 0deg;   -moz-transform: 0deg;   -ms-transform: 0deg;   -o-transform: 0deg;   transform: 0deg; }   .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-front, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-front {     -webkit-transform: rotateY(0deg);     -moz-transform: rotateY(0deg);     -ms-transform: rotateY(0deg);     -o-transform: rotateY(0deg);     transform: rotateY(0deg); }   .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back {     -webkit-transform: rotateY(0deg);     -moz-transform: rotateY(0deg);     -ms-transform: rotateY(0deg);     -o-transform: rotateY(0deg);     transform: rotateY(0deg); }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back:after, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back:after {       left: 18%; }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-cvc, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-cvc {       -webkit-transform: rotateY(180deg);       -moz-transform: rotateY(180deg);       -ms-transform: rotateY(180deg);       -o-transform: rotateY(180deg);       transform: rotateY(180deg);       left: 5%; }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-shiny, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-shiny {       left: 84%; }       .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-shiny:after, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-shiny:after {         left: -480%;         -webkit-transform: rotateY(180deg);         -moz-transform: rotateY(180deg);         -ms-transform: rotateY(180deg);         -o-transform: rotateY(180deg);         transform: rotateY(180deg); }  .jp-card.jp-card-ie-10.jp-card-amex .jp-card-back, .jp-card.jp-card-ie-11.jp-card-amex .jp-card-back {   display: none; }  .jp-card-logo {   height: 36px;   width: 60px;   font-style: italic; }   .jp-card-logo, .jp-card-logo:before, .jp-card-logo:after {     box-sizing: border-box; }  .jp-card-logo.jp-card-amex {   text-transform: uppercase;   font-size: 4px;   font-weight: bold;   color: white;   background-image: repeating-radial-gradient(circle at center, #FFF 1px, #999 2px);   background-image: repeating-radial-gradient(circle at center, #FFF 1px, #999 2px);   border: 1px solid #EEE; }   .jp-card-logo.jp-card-amex:before, .jp-card-logo.jp-card-amex:after {     width: 28px;     display: block;     position: absolute;     left: 16px; }   .jp-card-logo.jp-card-amex:before {     height: 28px;     content: "american";     top: 3px;     text-align: left;     padding-left: 2px;     padding-top: 11px;     background: #267AC3; }   .jp-card-logo.jp-card-amex:after {     content: "express";     bottom: 11px;     text-align: right;     padding-right: 2px; }  .jp-card.jp-card-amex.jp-card-flipped {   -webkit-transform: none;   -moz-transform: none;   -ms-transform: none;   -o-transform: none;   transform: none; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front:before, .jp-card.jp-card-amex.jp-card-identified .jp-card-back:before {   background-color: #108168; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front .jp-card-logo.jp-card-amex {   opacity: 1; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front .jp-card-cvc {   visibility: visible; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front:after {   opacity: 1; }  .jp-card-logo.jp-card-discover {   background: #FF6600;   color: #111;   text-transform: uppercase;   font-style: normal;   font-weight: bold;   font-size: 10px;   text-align: center;   overflow: hidden;   z-index: 1;   padding-top: 9px;   letter-spacing: .03em;   border: 1px solid #EEE; }   .jp-card-logo.jp-card-discover:before, .jp-card-logo.jp-card-discover:after {     content: " ";     display: block;     position: absolute; }   .jp-card-logo.jp-card-discover:before {     background: white;     width: 200px;     height: 200px;     border-radius: 200px;     bottom: -5%;     right: -80%;     z-index: -1; }   .jp-card-logo.jp-card-discover:after {     width: 8px;     height: 8px;     border-radius: 4px;     top: 10px;     left: 27px;     background-color: #FF6600;     background-image: -webkit-radial-gradient(#FF6600, #fff);     background-image: radial-gradient(  #FF6600, #fff);     content: "network";     font-size: 4px;     line-height: 24px;     text-indent: -7px; }  .jp-card .jp-card-front .jp-card-logo.jp-card-discover {   right: 12%;   top: 18%; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-front:before, .jp-card.jp-card-discover.jp-card-identified .jp-card-back:before {   background-color: #86B8CF; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-logo.jp-card-discover {   opacity: 1; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-front:after {   -webkit-transition: 400ms;   -moz-transition: 400ms;   transition: 400ms;   content: " ";   display: block;   background-color: #FF6600;   background-image: -webkit-linear-gradient(#FF6600, #ffa366, #FF6600);   background-image: linear-gradient(#FF6600, #ffa366, #FF6600);   height: 50px;   width: 50px;   border-radius: 25px;   position: absolute;   left: 100%;   top: 15%;   margin-left: -25px;   box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.5); }  .jp-card-logo.jp-card-visa {   background: white;   text-transform: uppercase;   color: #1A1876;   text-align: center;   font-weight: bold;   font-size: 15px;   line-height: 18px; }   .jp-card-logo.jp-card-visa:before, .jp-card-logo.jp-card-visa:after {     content: " ";     display: block;     width: 100%;     height: 25%; }   .jp-card-logo.jp-card-visa:before {     background: #1A1876; }   .jp-card-logo.jp-card-visa:after {     background: #E79800; }  .jp-card.jp-card-visa.jp-card-identified .jp-card-front:before, .jp-card.jp-card-visa.jp-card-identified .jp-card-back:before {   background-color: #191278; }  .jp-card.jp-card-visa.jp-card-identified .jp-card-logo.jp-card-visa {   opacity: 1; }  .jp-card-logo.jp-card-mastercard {   color: white;   font-weight: bold;   text-align: center;   font-size: 9px;   line-height: 36px;   z-index: 1;   text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }   .jp-card-logo.jp-card-mastercard:before, .jp-card-logo.jp-card-mastercard:after {     content: " ";     display: block;     width: 36px;     top: 0;     position: absolute;     height: 36px;     border-radius: 18px; }   .jp-card-logo.jp-card-mastercard:before {     left: 0;     background: #FF0000;     z-index: -1; }   .jp-card-logo.jp-card-mastercard:after {     right: 0;     background: #FFAB00;     z-index: -2; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-front .jp-card-logo.jp-card-mastercard, .jp-card.jp-card-mastercard.jp-card-identified .jp-card-back .jp-card-logo.jp-card-mastercard {   box-shadow: none; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-front:before, .jp-card.jp-card-mastercard.jp-card-identified .jp-card-back:before {   background-color: #0061A8; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-logo.jp-card-mastercard {   opacity: 1; }  .jp-card-logo.jp-card-maestro {   color: white;   font-weight: bold;   text-align: center;   font-size: 14px;   line-height: 36px;   z-index: 1;   text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }   .jp-card-logo.jp-card-maestro:before, .jp-card-logo.jp-card-maestro:after {     content: " ";     display: block;     width: 36px;     top: 0;     position: absolute;     height: 36px;     border-radius: 18px; }   .jp-card-logo.jp-card-maestro:before {     left: 0;     background: #0064CB;     z-index: -1; }   .jp-card-logo.jp-card-maestro:after {     right: 0;     background: #CC0000;     z-index: -2; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-front .jp-card-logo.jp-card-maestro, .jp-card.jp-card-maestro.jp-card-identified .jp-card-back .jp-card-logo.jp-card-maestro {   box-shadow: none; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-front:before, .jp-card.jp-card-maestro.jp-card-identified .jp-card-back:before {   background-color: #0B2C5F; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-logo.jp-card-maestro {   opacity: 1; }  .jp-card-logo.jp-card-dankort {   width: 60px;   height: 36px;   padding: 3px;   border-radius: 8px;   border: #000000 1px solid;   background-color: #FFFFFF; }   .jp-card-logo.jp-card-dankort .dk {     position: relative;     width: 100%;     height: 100%;     overflow: hidden; }     .jp-card-logo.jp-card-dankort .dk:before {       background-color: #ED1C24;       content: '';       position: absolute;       width: 100%;       height: 100%;       display: block;       border-radius: 6px; }     .jp-card-logo.jp-card-dankort .dk:after {       content: '';       position: absolute;       top: 50%;       margin-top: -7.7px;       right: 0;       width: 0;       height: 0;       border-style: solid;       border-width: 7px 7px 10px 0;       border-color: transparent #ED1C24 transparent transparent;       z-index: 1; }   .jp-card-logo.jp-card-dankort .d, .jp-card-logo.jp-card-dankort .k {     position: absolute;     top: 50%;     width: 50%;     display: block;     height: 15.4px;     margin-top: -7.7px;     background: white; }   .jp-card-logo.jp-card-dankort .d {     left: 0;     border-radius: 0 8px 10px 0; }     .jp-card-logo.jp-card-dankort .d:before {       content: '';       position: absolute;       top: 50%;       left: 50%;       display: block;       background: #ED1C24;       border-radius: 2px 4px 6px 0px;       height: 5px;       width: 7px;       margin: -3px 0 0 -4px; }   .jp-card-logo.jp-card-dankort .k {     right: 0; }     .jp-card-logo.jp-card-dankort .k:before, .jp-card-logo.jp-card-dankort .k:after {       content: '';       position: absolute;       right: 50%;       width: 0;       height: 0;       border-style: solid;       margin-right: -1px; }     .jp-card-logo.jp-card-dankort .k:before {       top: 0;       border-width: 8px 5px 0 0;       border-color: #ED1C24 transparent transparent transparent; }     .jp-card-logo.jp-card-dankort .k:after {       bottom: 0;       border-width: 0 5px 8px 0;       border-color: transparent transparent #ED1C24 transparent; }  .jp-card.jp-card-dankort.jp-card-identified .jp-card-front:before, .jp-card.jp-card-dankort.jp-card-identified .jp-card-back:before {   background-color: #0055C7; }  .jp-card.jp-card-dankort.jp-card-identified .jp-card-logo.jp-card-dankort {   opacity: 1; }  .jp-card-logo.jp-card-elo {   height: 50px;   width: 50px;   border-radius: 100%;   background: black;   color: white;   text-align: center;   text-transform: lowercase;   font-size: 21px;   font-style: normal;   letter-spacing: 1px;   font-weight: bold;   padding-top: 13px; }   .jp-card-logo.jp-card-elo .e, .jp-card-logo.jp-card-elo .l, .jp-card-logo.jp-card-elo .o {     display: inline-block;     position: relative; }   .jp-card-logo.jp-card-elo .e {     -webkit-transform: rotate(-15deg);     -moz-transform: rotate(-15deg);     -ms-transform: rotate(-15deg);     -o-transform: rotate(-15deg);     transform: rotate(-15deg); }   .jp-card-logo.jp-card-elo .o {     position: relative;     display: inline-block;     width: 12px;     height: 12px;     right: 0;     top: 7px;     border-radius: 100%;     background-image: -webkit-linear-gradient( yellow 50%, red 50%);     background-image: linear-gradient( yellow 50%, red 50%);     -webkit-transform: rotate(40deg);     -moz-transform: rotate(40deg);     -ms-transform: rotate(40deg);     -o-transform: rotate(40deg);     transform: rotate(40deg);     text-indent: -9999px; }     .jp-card-logo.jp-card-elo .o:before {       content: "";       position: absolute;       width: 49%;       height: 49%;       background: black;       border-radius: 100%;       text-indent: -99999px;       top: 25%;       left: 25%; }  .jp-card.jp-card-elo.jp-card-identified .jp-card-front:before, .jp-card.jp-card-elo.jp-card-identified .jp-card-back:before {   background-color: #6F6969; }  .jp-card.jp-card-elo.jp-card-identified .jp-card-logo.jp-card-elo {   opacity: 1; }  .jp-card-container {   -webkit-perspective: 1000px;   -moz-perspective: 1000px;   perspective: 1000px;   width: 350px;   max-width: 100%;   height: 200px;   margin: auto;   z-index: 1;   position: relative; }  .jp-card {   font-family: "Helvetica Neue";   line-height: 1;   position: relative;   width: 100%;   height: 100%;   min-width: 315px;   border-radius: 10px;   -webkit-transform-style: preserve-3d;   -moz-transform-style: preserve-3d;   -ms-transform-style: preserve-3d;   -o-transform-style: preserve-3d;   transform-style: preserve-3d;   -webkit-transition: all 400ms linear;   -moz-transition: all 400ms linear;   transition: all 400ms linear; }   .jp-card > *, .jp-card > *:before, .jp-card > *:after {     -moz-box-sizing: border-box;     -webkit-box-sizing: border-box;     box-sizing: border-box;     font-family: inherit; }   .jp-card.jp-card-flipped {     -webkit-transform: rotateY(180deg);     -moz-transform: rotateY(180deg);     -ms-transform: rotateY(180deg);     -o-transform: rotateY(180deg);     transform: rotateY(180deg); }   .jp-card .jp-card-front, .jp-card .jp-card-back {     -webkit-backface-visibility: hidden;     backface-visibility: hidden;     -webkit-transform-style: preserve-3d;     -moz-transform-style: preserve-3d;     -ms-transform-style: preserve-3d;     -o-transform-style: preserve-3d;     transform-style: preserve-3d;     -webkit-transition: all 400ms linear;     -moz-transition: all 400ms linear;     transition: all 400ms linear;     width: 100%;     height: 100%;     position: absolute;     top: 0;     left: 0;     overflow: hidden;     border-radius: 10px;     background: #DDD; }     .jp-card .jp-card-front:before, .jp-card .jp-card-back:before {       content: " ";       display: block;       position: absolute;       width: 100%;       height: 100%;       top: 0;       left: 0;       opacity: 0;       border-radius: 10px;       -webkit-transition: all 400ms ease;       -moz-transition: all 400ms ease;       transition: all 400ms ease; }     .jp-card .jp-card-front:after, .jp-card .jp-card-back:after {       content: " ";       display: block; }     .jp-card .jp-card-front .jp-card-display, .jp-card .jp-card-back .jp-card-display {       color: white;       font-weight: normal;       opacity: 0.5;       -webkit-transition: opacity 400ms linear;       -moz-transition: opacity 400ms linear;       transition: opacity 400ms linear; }       .jp-card .jp-card-front .jp-card-display.jp-card-focused, .jp-card .jp-card-back .jp-card-display.jp-card-focused {         opacity: 1;         font-weight: 700; }     .jp-card .jp-card-front .jp-card-cvc, .jp-card .jp-card-back .jp-card-cvc {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 14px; }     .jp-card .jp-card-front .jp-card-shiny, .jp-card .jp-card-back .jp-card-shiny {       width: 50px;       height: 35px;       border-radius: 5px;       background: #CCC;       position: relative; }       .jp-card .jp-card-front .jp-card-shiny:before, .jp-card .jp-card-back .jp-card-shiny:before {         content: " ";         display: block;         width: 70%;         height: 60%;         border-top-right-radius: 5px;         border-bottom-right-radius: 5px;         background: #d9d9d9;         position: absolute;         top: 20%; }   .jp-card .jp-card-front .jp-card-logo {     position: absolute;     opacity: 0;     right: 5%;     top: 8%;     -webkit-transition: 400ms;     -moz-transition: 400ms;     transition: 400ms; }   .jp-card .jp-card-front .jp-card-lower {     width: 80%;     position: absolute;     left: 10%;     bottom: 30px; }     @media only screen and (max-width: 480px) {       .jp-card .jp-card-front .jp-card-lower {         width: 90%;         left: 5%; } }     .jp-card .jp-card-front .jp-card-lower .jp-card-cvc {       visibility: hidden;       float: right;       position: relative;       bottom: 5px; }     .jp-card .jp-card-front .jp-card-lower .jp-card-number {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 24px;       clear: both;       margin-bottom: 30px; }     .jp-card .jp-card-front .jp-card-lower .jp-card-expiry {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       letter-spacing: 0em;       position: relative;       float: right;       width: 25%; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:before, .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:after {         font-family: "Helvetica Neue";         font-weight: bold;         font-size: 7px;         white-space: pre;         display: block;         opacity: .5; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:before {         content: attr(data-before);         margin-bottom: 2px;         font-size: 7px;         text-transform: uppercase; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:after {         position: absolute;         content: attr(data-after);         text-align: right;         right: 100%;         margin-right: 5px;         margin-top: 2px;         bottom: 0; }     .jp-card .jp-card-front .jp-card-lower .jp-card-name {       text-transform: uppercase;       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 20px;       max-height: 45px;       position: absolute;       bottom: 0;       width: 190px;       display: -webkit-box;       -webkit-line-clamp: 2;       -webkit-box-orient: horizontal;       overflow: hidden;       text-overflow: ellipsis; }   .jp-card .jp-card-back {     -webkit-transform: rotateY(180deg);     -moz-transform: rotateY(180deg);     -ms-transform: rotateY(180deg);     -o-transform: rotateY(180deg);     transform: rotateY(180deg); }     .jp-card .jp-card-back .jp-card-bar {       background-color: #444;       background-image: -webkit-linear-gradient(#444, #333);       background-image: linear-gradient(#444, #333);       width: 100%;       height: 20%;       position: absolute;       top: 10%; }     .jp-card .jp-card-back:after {       content: " ";       display: block;       background-color: #FFF;       background-image: -webkit-linear-gradient(#FFF, #FFF);       background-image: linear-gradient(#FFF, #FFF);       width: 80%;       height: 16%;       position: absolute;       top: 40%;       left: 2%; }     .jp-card .jp-card-back .jp-card-cvc {       position: absolute;       top: 40%;       left: 85%;       -webkit-transition-delay: 600ms;       -moz-transition-delay: 600ms;       transition-delay: 600ms; }     .jp-card .jp-card-back .jp-card-shiny {       position: absolute;       top: 66%;       left: 2%; }       .jp-card .jp-card-back .jp-card-shiny:after {         content: "This card has been issued by Jesse Pollak and is licensed for anyone to use anywhere for free.AIt comes with no warranty.A For support issues, please visit: github.com/jessepollak/card.";         position: absolute;         left: 120%;         top: 5%;         color: white;         font-size: 7px;         width: 230px;         opacity: .5; }   .jp-card.jp-card-identified {     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }     .jp-card.jp-card-identified .jp-card-front, .jp-card.jp-card-identified .jp-card-back {       background-color: #000;       background-color: rgba(0, 0, 0, 0.5); }       .jp-card.jp-card-identified .jp-card-front:before, .jp-card.jp-card-identified .jp-card-back:before {         -webkit-transition: all 400ms ease;         -moz-transition: all 400ms ease;         transition: all 400ms ease;         background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);         background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);         opacity: 1; }       .jp-card.jp-card-identified .jp-card-front .jp-card-logo, .jp-card.jp-card-identified .jp-card-back .jp-card-logo {         box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3); }     .jp-card.jp-card-identified.no-radial-gradient .jp-card-front:before, .jp-card.jp-card-identified.no-radial-gradient .jp-card-back:before {       background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);       background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%); } </style><style></style><link rel="stylesheet" href="./Dispute_Of_Charges _ DocHub_files/css" type="text/css" media="screen"></head> <body class="dh-body ember-application" style="background: rgb(242, 242, 242); overflow-x: visible;">  <script src="./Dispute_Of_Charges _ DocHub_files/vendor-d63168193689eb6b03e306cd6d64957b.js.download"></script> <script src="./Dispute_Of_Charges _ DocHub_files/dochub-7c20c67957eab760392bf3f526b52794.js.download"></script>  <div id="ember656" class="ember-view">
+<!---->
+<div id="document-wrapper">
+  <div id="ember846" style="touch-action: manipulation; -ms-touch-action: manipulation;" class="ember-view dh-document-toolbar"><nav class="navbar navbar-default" role="navigation">
+  <div id="js-toolbar" class="dh-document-bars">
+
+    <div class="navbar-header navbar-document">
+
+      <div class="collapse navbar-collapse navbar-right hidden-xs">
+
+        <ul class="nav navbar-nav pull-right">
+            <li class="btn-group navbar-btn" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Try DocHub Pro Free!">
+              <a id="ember857" style="touch-action: manipulation; -ms-touch-action: manipulation;" href="https://dochub.com/settings/billing/plans" class="no-padding ember-view"><button class="btn btn-xs btn-default no-focus-ring" style="margin: 7px 10px 0;touch-action: manipulation; -ms-touch-action: manipulation;">Upgrade</button></a>
+            </li>
+
+            <li id="ember932" style="" class="ember-view dh-document-file-menu dropdown file-menu">
+  <a class="dropdown-toggle" data-toggle="dropdown" style="touch-action: manipulation; -ms-touch-action: manipulation;">
+    <div data-toggle="tooltip" data-placement="bottom" data-container=".navbar" title="" data-original-title="File">
+      <span class="fa fa-bars"></span>&nbsp;<span class="caret"></span>
+    </div>
+  </a>
+
+<ul class="dropdown-menu dropdown-menu-right" role="menu">
+<!----><!---->    <li class="dropdown-submenu pull-left-custom">
+      <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="933">Send</a>
+      <ul class="dropdown-menu hidden">
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="934">Share Link</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="935">Email Attachment</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="936">Sign Request</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="937">Fax</a></li>
+      </ul>
+    </li>
+      <li class="dropdown-submenu pull-left-custom">
+        <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="944">Actions</a>
+        <ul class="dropdown-menu hidden">
+<!---->              <li>
+                <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="945">
+                  Convert to Template
+                </a>
+              </li>
+              <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="946">Make a Copy...</a></li>
+              <li class="dropdown-submenu pull-left-custom">
+                <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="947">Rotate Pages</a>
+                <ul class="dropdown-menu hidden">
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="948">Rotate 180°</a></li>
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="949">Rotate 90° Clockwise</a></li>
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="950">Rotate 90° Counter-Clockwise</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu pull-left-custom">
+                <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="951">Append Pages</a>
+                <ul class="dropdown-menu hidden">
+                  <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="952">Append Blank Page</a></li>
+                  <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="953">Merge and Append File...</a></li>
+                </ul>
+              </li>
+<!---->              <li>
+                <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="954">
+                  Destroy Document
+                </a>
+              </li>
+
+            <li role="presentation" class="divider"></li>
+
+            <li>
+              <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="955">
+                <!----> Toggle Audit Mode
+              </a>
+            </li>
+
+            <li id="ember973" style="" class="ember-view tooltipstered">  <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="974">
+    <i class="fa fa-check"></i>  Toggle Snap to Grid (G)
+  </a>
+
+</li>
+
+            <li>
+              <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="975">
+                <!---->Toggle Activity Panel (A)
+              </a>
+            </li>
+
+<!---->
+        </ul>
+      </li>
+
+    <li class="dropdown-submenu pull-left-custom">
+      <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="976">Download</a>
+      <ul class="dropdown-menu hidden">
+            <li>
+    <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="988">Save to <i class="fa fa-google"></i> Drive</a>
+  </li>
+<li>
+  <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="989">
+      Save to <i class="fa fa-google"></i> Drive As...
+  </a>
+</li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="990">
+            Export to <i class="fa fa-dropbox"></i> Dropbox...
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="991">
+            Export to <img src="./Dispute_Of_Charges _ DocHub_files/onedrive-ee4027c48b3e6d0e335486a449ee33da.svg" width="20" height="20"> OneDrive...
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="992">Download as PDF (lossless)</a>
+        </li>
+
+        <li data-toggle="tooltip" data-placement="left" title="Flattens fields into read-only text">
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1371">
+            Download Flattened PDF
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="997">
+            Download DOC (imperfect) <small class="label label-info" data-toggle="tooltip" data-placement="bottom" title="Big improvements are coming soon to this feature!">BETA</small>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="998">Document Properties</a></li>
+      <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="999">Permissions and Sharing</a></li>
+
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1000">Document Audit <i class="fa fa-lock" style="color: orange;"></i> <span class="label label-info" style="vertical-align: top; display: inline-block; font-size: 60%;">BETA</span></a></li>
+
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1001"><i class="fa fa-print"></i> Print...</a></li>
+
+    <li role="presentation" class="divider"></li>
+    <li class="dropdown-header"><span style="font-size: 14px;">
+      Signed in as <strong>lucas3264063a</strong></span><br>
+      <small style="font-size: 11.8px">tollylucas@gmail.com</small>
+    </li>
+      <li><a id="ember1002" style="touch-action: manipulation; -ms-touch-action: manipulation;" href="https://dochub.com/settings/profile" tabindex="-1" class="ember-view">User Settings</a></li>
+    <li>
+      <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1019"><i class="fa fa-sign-out"></i> Sign Out</a>
+    </li>
+</ul>
+</li>
+        </ul>
+      </div>
+      <div class="pull-right" style="margin-right: 5px;">
+        <div id="ember1027" style="" class="ember-view"><!----></div>
+<!---->      </div>
+
+        <a id="ember1030" style="touch-action: manipulation; -ms-touch-action: manipulation;" href="https://dochub.com/" class="ember-view navbar-brand no-padding"><img src="./Dispute_Of_Charges _ DocHub_files/toolbar-logo-b5f96a2d8044c85ad92f7c2e47e8d980.svg" class="dh-logo" style="margin: 0;"></a>
+
+<!---->
+<!---->
+      <p class="title-text has-textfield  has-status ">
+        <span id="ember1094" style="" class="ember-view">  <input id="ember1106" style="touch-action: manipulation; width: 180px; overflow: hidden;" type="text" class="dh-toolbar-title ember-view ember-text-field ember-auto-resize">
+<!----></span> <br>
+<!---->
+<!---->      <small class="text-muted" style="font-size:12px;">Saved</small>
+      </p>
+    </div>
+
+    <div class="collapse navbar-collapse mobile-navbar">
+      <div class="visible-xs-inline">
+        <ul class="nav navbar-nav ">
+          <li id="ember1107" style="" class="ember-view dh-document-file-menu dropdown file-menu">
+  <a class="dropdown-toggle" data-toggle="dropdown" style="touch-action: manipulation; -ms-touch-action: manipulation;">
+    <div data-toggle="tooltip" data-placement="bottom" data-container=".navbar" title="File">
+      <span class="fa fa-bars"></span>&nbsp;<span class="caret"></span>
+    </div>
+  </a>
+
+<ul class="dropdown-menu dropdown-menu-right" role="menu">
+<!----><!---->    <li class="dropdown-submenu pull-left-custom">
+      <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1108">Send</a>
+      <ul class="dropdown-menu hidden">
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1109">Share Link</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1110">Email Attachment</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1111">Sign Request</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1112">Fax</a></li>
+      </ul>
+    </li>
+      <li class="dropdown-submenu pull-left-custom">
+        <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1113">Actions</a>
+        <ul class="dropdown-menu hidden">
+<!---->              <li>
+                <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1114">
+                  Convert to Template
+                </a>
+              </li>
+              <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1115">Make a Copy...</a></li>
+              <li class="dropdown-submenu pull-left-custom">
+                <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1116">Rotate Pages</a>
+                <ul class="dropdown-menu hidden">
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1117">Rotate 180°</a></li>
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1118">Rotate 90° Clockwise</a></li>
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1119">Rotate 90° Counter-Clockwise</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu pull-left-custom">
+                <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1120">Append Pages</a>
+                <ul class="dropdown-menu hidden">
+                  <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1121">Append Blank Page</a></li>
+                  <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1122">Merge and Append File...</a></li>
+                </ul>
+              </li>
+<!---->              <li>
+                <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1123">
+                  Destroy Document
+                </a>
+              </li>
+
+            <li role="presentation" class="divider"></li>
+
+            <li>
+              <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1124">
+                <!----> Toggle Audit Mode
+              </a>
+            </li>
+
+            <li id="ember1126" style="" class="ember-view tooltipstered">  <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1127">
+    <i class="fa fa-check"></i>  Toggle Snap to Grid (G)
+  </a>
+
+</li>
+
+            <li>
+              <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1128">
+                <!---->Toggle Activity Panel (A)
+              </a>
+            </li>
+
+<!---->
+        </ul>
+      </li>
+
+    <li class="dropdown-submenu pull-left-custom">
+      <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1129">Download</a>
+      <ul class="dropdown-menu hidden">
+            <li>
+    <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1131">Save to <i class="fa fa-google"></i> Drive</a>
+  </li>
+<li>
+  <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1132">
+      Save to <i class="fa fa-google"></i> Drive As...
+  </a>
+</li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1133">
+            Export to <i class="fa fa-dropbox"></i> Dropbox...
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1134">
+            Export to <img src="./Dispute_Of_Charges _ DocHub_files/onedrive-ee4027c48b3e6d0e335486a449ee33da.svg" width="20" height="20"> OneDrive...
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1135">Download as PDF (lossless)</a>
+        </li>
+
+        <li data-toggle="tooltip" data-placement="left" title="Flattens fields into read-only text">
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1372">
+            Download Flattened PDF
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1136">
+            Download DOC (imperfect) <small class="label label-info" data-toggle="tooltip" data-placement="bottom" title="Big improvements are coming soon to this feature!">BETA</small>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1137">Document Properties</a></li>
+      <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1138">Permissions and Sharing</a></li>
+
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1139">Document Audit <i class="fa fa-lock" style="color: orange;"></i> <span class="label label-info" style="vertical-align: top; display: inline-block; font-size: 60%;">BETA</span></a></li>
+
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1140"><i class="fa fa-print"></i> Print...</a></li>
+
+    <li role="presentation" class="divider"></li>
+    <li class="dropdown-header"><span style="font-size: 14px;">
+      Signed in as <strong>lucas3264063a</strong></span><br>
+      <small style="font-size: 11.8px">tollylucas@gmail.com</small>
+    </li>
+      <li><a id="ember1141" style="touch-action: manipulation; -ms-touch-action: manipulation;" href="https://dochub.com/settings/profile" tabindex="-1" class="ember-view">User Settings</a></li>
+    <li>
+      <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1142"><i class="fa fa-sign-out"></i> Sign Out</a>
+    </li>
+</ul>
+</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+  <ul id="ember1151" style="" class="ember-view dh-toolbar dh-btn-toolbar"><button id="ember1160" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <i class="fa fa-th"></i>
+
+
+</button>
+<button id="ember1161" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">      <i class="fa fa-list-alt"></i>
+
+
+</button>
+<span class="dh-separator">
+<button id="ember1162" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">      <i class="fa fa-print"></i>
+
+
+</button></span>
+
+  <span class="dh-separator">
+<button id="ember1163" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn">        <i class="fa fa-undo"></i>
+
+
+</button>
+<button id="ember1164" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn disabled dh-disabled-cursor tooltipstered">        <i class="fa fa-rotate-right"></i>
+
+
+</button>  </span>
+
+  <span class="dh-separator">
+<button id="ember1174" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn active tooltipstered">      <img src="./Dispute_Of_Charges _ DocHub_files/pointer-ff37f3bc7a025d0760414e707c658435.svg">
+
+
+</button></span>
+
+<button id="ember1175" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="glyphicon glyphicon-font"></span>
+
+
+</button>
+<div id="ember1184" style="" class="ember-view dh-toolbar-dropdown dh-disclosure btn-group"><button id="ember1185" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="glyphicon glyphicon-pencil"></span>
+
+
+</button>
+<button id="ember1186" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="caret"></span>
+
+
+</button>
+<ul class="dh-dropdown-menu dropdown-menu">
+<button id="ember1195" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">    <span class="glyphicon glyphicon-pencil"></span>
+
+</button>
+<button id="ember1196" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">    <i class="fa fa-square-o locked"></i>
+
+</button>
+<button id="ember1197" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">    <i class="fa fa-circle-o locked"></i>
+
+</button>
+<button id="ember1198" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">    <i class="line-tool fa locked"></i>
+
+</button></ul>
+</div>
+
+<div id="ember1207" style="" class="ember-view dh-toolbar-dropdown dh-disclosure btn-group"><button id="ember1208" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <img src="./Dispute_Of_Charges _ DocHub_files/highlight-text-9725fbfa6ecab13807d8513a8f59a9b5.svg">
+
+
+</button>
+<button id="ember1209" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">      <span class="caret"></span>
+
+
+</button>
+  <ul class="dh-dropdown-menu dropdown-menu">
+<button id="ember1210" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">      <img src="./Dispute_Of_Charges _ DocHub_files/highlight-text-9725fbfa6ecab13807d8513a8f59a9b5.svg">
+
+</button>
+<button id="ember1211" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">      <img src="./Dispute_Of_Charges _ DocHub_files/highlight-box-20b850a344675327801ac018fa466e9b.svg">
+
+</button>  </ul>
+</div>
+
+<button id="ember1212" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="glyphicon glyphicon-comment"></span>
+
+
+</button>
+<button id="ember1213" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <i class="fa fa-eraser"></i>
+
+
+</button>
+<div id="ember1222" style="" class="ember-view dh-toolbar-dropdown dh-disclosure btn-group toolbar-stamp-selector"><button id="ember1223" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <i style="font-size: 16px; color: #333333;" class="fa fa-check"></i>
+
+
+</button>
+<button id="ember1224" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="caret"></span>
+
+
+</button>
+<div class="dropdown-menu dh-stamp-dropdown dh-autoposition-dropdown">
+  <div class="stamp-wrap">
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1225">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-check"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1226">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-exclamation-triangle"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1227">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-clock-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1228">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-times"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1229">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-flag"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1230">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-circle-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1231">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-check-square-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1232">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-pencil-square-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1233">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-frown-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1234">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-smile-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1235">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-pencil"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1236">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-heart-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1237">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-star"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1238">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-question"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1239">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-check-square"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1240">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-square-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1241">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-arrow-circle-left"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1242">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-arrow-circle-right"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1243">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-arrow-left"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1244">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-arrow-right"></i>
+      </button>
+  </div>
+  <hr style="margin: 0;">
+  <button class="btn btn-link" style="padding: 3px; margin: 0 2px;touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1245">
+    Customize...
+  </button>
+</div>
+</div>
+
+<div id="ember1258" style="" class="ember-view dh-toolbar-btn insert-image tooltipstered"><div id="ember1267" style="" class="ember-view droppable dh-droplet-area">
+  <div class="file-upload ">
+    <!-- Resets input after 1st upload -->
+      <span class="fa fa-image"></span>
+      <input id="ember1280" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="file" class="ember-view files">
+  </div>
+
+
+<!----></div></div>
+
+<div id="ember1289" style="" class="ember-view dh-toolbar-dropdown btn-group"><button id="ember1290" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">  Sign
+
+
+</button>
+<ul class="dh-dropdown-menu signature-selector dropdown-menu dh-autoposition-dropdown">
+  <li class="dh-toolbar-dropdown-item" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1291">
+    Create Signature...
+  </li>
+
+
+<!---->
+  <li class="divider" style="margin: 3px 0;"></li>
+<!---->  <li style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1299">
+<div id="ember1308" style="" draggable="true" class="ember-view dh-user-signature text-center">      1/25/2017
+
+</div>  </li>
+
+    <li role="presentation" class="dropdown-header">
+      You have zero saved signatures.  Create a signature, then drag &amp; drop it from here.
+    </li>
+</ul>
+</div>
+
+
+
+<div class="dh-separator"><!----><!----><!----><!----></div><!----><!----><div class="dh-separator"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div>
+
+</ul>
+
+<!---->
+<style> .ui-selectable-helper{ height:100%; width:100%; background:transparent; border:none; } .dh-page-text{ cursor: text; } </style>
+</div>
+
+  <div class="flex-body">
+        <div class="mainArea">
+
+<!---->
+<!---->
+<div id="ember1383" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" tabindex="-1" class="ember-view dh-viewport no-focus-ring">
+<div id="ember1392" style="touch-action: manipulation; -ms-touch-action: manipulation;" class="ember-view dh-fixed-controls affix">  <div id="ember1401" style="" class="ember-view">
+<p class="btn-group-vertical">
+  <button class="btn btn-default no-focus-ring" data-toggle="tooltip" data-placement="right" data-container="#js-toolbar" title="Zoom In" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1402">
+    <span class="glyphicon glyphicon-zoom-in"></span>
+  </button>
+  <button class="btn btn-default no-focus-ring" data-toggle="tooltip" data-placement="right" data-container="#js-toolbar" title="Zoom Out" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1403">
+    <span class="glyphicon glyphicon-zoom-out"></span>
+  </button>
+</p>
+</div>
+
+<!---->
+<!----></div>
+
+
+  <style>
+    .dh-page-text::-moz-selection { background: rgba(178, 215, 255, 0.7); }
+  </style>
+
+<!---->
+  
+  <input id="ember1412" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="text" class="ember-view ember-text-field dh-hidden-tab-receiver">
+  <div class="dh-document-pages-layout" style="min-width: 1715px; width: 1715px; max-width: 1715px;  min-height: 2638.4px; left: 0px;    ">
+  <div class="dh-document-pages-layout-wrapper" style="margin: 10px 367.9px; 30px;">
+        <div id="ember1422" style="width: 1099.2px; height: 1267.2px; top: 0px;" data-model-id="538706308" class="ember-view dh-page">  <div class="dh-page-padding">
+      <div id="ember1431" style="height: 1267px; width: 979px;" class="ember-view dh-pdf-js-image"><!----><!----><canvas class="pdf-js-img-canvas" height="2218" width="1714" style="position: relative; left: 0px; top: 0px; height: 1267px; width: 979px;"></canvas></div>
+
+<!---->
+      <div id="ember1440" style="" class="ember-view dh-page-text-wrap">    <div id="ember1816" style="bottom: 1154.24px; left: 160.64000000000001px; font-size: 38px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">MADISON COLLEGE
+</div>
+    <div id="ember1818" style="bottom: 1110.8799999999999px; left: 160.64000000000001px; font-size: 38px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Dispute of Charges
+</div>
+    <div id="ember1820" style="bottom: 1052.16px; left: 75.04px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Every student is responsible for charges and payments on their account. If a student feels charges on 
+</div>
+    <div id="ember1822" style="bottom: 1032.96px; left: 75.04px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">their account are invalid due to a billing error, he or she may dispute the charge for a class.  
+</div>
+    <div id="ember1824" style="bottom: 1004.1600000000001px; left: 75.04px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Students have 20 calendar days from the day tuition past due notices are sent to submit this form for 
+</div>
+    <div id="ember1826" style="bottom: 984.96px; left: 75.04px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">the class(es)/charges in question to have any claims researched. 
+</div>
+    <div id="ember1828" style="bottom: 911.5200000000001px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">All Dispute of Charges requests must be initiated by the student by submitting the completed Dispute of 
+</div>
+    <div id="ember1830" style="bottom: 892.3200000000002px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Charges Form with proper documentation to the Enrollment Center. Students may submit a dispute of 
+</div>
+    <div id="ember1832" style="bottom: 873.1200000000001px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">charges within the term of enrollment for the disputed class(es) no later than 20 calendar days 
+</div>
+    <div id="ember1834" style="bottom: 853.9200000000001px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">(postmarked) from the time tuition past due notices are sent. Once a student's past due balance is 
+</div>
+    <div id="ember1836" style="bottom: 834.7200000000001px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">referred to an outside agency for collection and credit bureau reporting, they may no longer dispute their 
+</div>
+    <div id="ember1838" style="bottom: 815.52px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">balance with Madison College and will be referred to the collection agency. A dispute of charges 
+</div>
+    <div id="ember1840" style="bottom: 796.32px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">submitted after the term of enrollment or after an account has been referred to collections will result in 
+</div>
+    <div id="ember1842" style="bottom: 777.12px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">denial. Any supporting documentation provided will become a part of the student record. Phone calls, e-
+</div>
+    <div id="ember1844" style="bottom: 757.9200000000001px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">mails or other forms of communication of dispute will not be accepted. 
+</div>
+    <div id="ember1846" style="bottom: 729.12px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Failure to truthfully complete the necessary form in its entirety and/or supply adequate documentation will 
+</div>
+    <div id="ember1848" style="bottom: 709.9200000000001px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">result in a denial of the refund by the Enrollment Center with no further rights to appeal. 
+</div>
+    <div id="ember1850" style="bottom: 681.12px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Submit completed form and any supporting documentation in one of the following ways: 
+</div>
+    <div id="ember1852" style="bottom: 652.32px; left: 97.28px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">In-person (preferred): Enrollment Center - Truax Campus, Rm. A1000 or any regional or metro campus 
+</div>
+    <div id="ember1854" style="bottom: 633.12px; left: 97.28px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Fax: (608) 243-4353 
+</div>
+    <div id="ember1856" style="bottom: 633.12px; left: 270.08000000000004px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text"> 
+</div>
+    <div id="ember1858" style="bottom: 633.12px; left: 327.68000000000006px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text"> 
+</div>
+    <div id="ember1860" style="bottom: 633.12px; left: 385.28000000000003px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text"> 
+</div>
+    <div id="ember1862" style="bottom: 613.92px; left: 97.28px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Mail: Enrollment Center, Madison College, 1701 Wright Street, Madison, WI 53704 
+</div>
+    <div id="ember1864" style="bottom: 585.12px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Please allow up to 60 days to research and process a Dispute of Charges request. Requests are 
+</div>
+    <div id="ember1866" style="bottom: 565.92px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">reviewed in order they are received. You will receive a letter at the address provided regarding a 
+</div>
+    <div id="ember1868" style="bottom: 546.72px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">determination. Please keep your contact information current through your Student Center. 
+</div>
+    <div id="ember1870" style="bottom: 517.92px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Submitting a Dispute of Charges does not extend the tuition due date. Students are responsible for 
+</div>
+    <div id="ember1872" style="bottom: 498.72px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">payment of fees owed by the deadline. Past due balances restrict course registration and must be paid in 
+</div>
+    <div id="ember1874" style="bottom: 479.52px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">order to register for future classes while the Dispute is reviewed. If granted, a partial refund will be issued. 
+</div>
+    <div id="ember1876" style="bottom: 460.32px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Refunds will be made at Madison College's discretion and decisions are final. 
+</div>
+    <div id="ember1878" style="bottom: 101.28px; left: 74.24px; font-size: 14px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Questions? For further assistance with this form, call the Enrollment Center at (608) 246-6210 or visit in-person. 
+</div>
+    <div id="ember1880" style="bottom: 390.08000000000004px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Failure to drop a class for refund - It is the responsibility of the student to withdraw from a course. To 
+</div>
+    <div id="ember1882" style="bottom: 370.88000000000005px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">qualify for a full refund, the class must be dropped at least one full day prior to the class start date. For 
+</div>
+    <div id="ember1884" style="bottom: 351.68000000000006px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">refund information, please refer to the WTCS Refund Policy. 
+</div>
+    <div id="ember1886" style="bottom: 324.48px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Non-attendance - Failure to attend does not constitute an official withdrawal. 
+</div>
+    <div id="ember1888" style="bottom: 297.28000000000003px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Situations that are Academic in Nature - If the reason for dispute is related to coursework and/or 
+</div>
+    <div id="ember1890" style="bottom: 278.08000000000004px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">instruction, please refer to Conflict Management Services for assistance. 
+</div>
+    <div id="ember1892" style="bottom: 250.88000000000002px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Extenuating Circumstance - If an extenuating circumstance exists, please refer to that process and 
+</div>
+    <div id="ember1894" style="bottom: 231.68000000000004px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">do not submit a Dispute of Charges. 
+</div>
+    <div id="ember1896" style="bottom: 204.48000000000002px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Failure to Receive an Invoice - It is the student's responsibility to keep their contact information current 
+</div>
+    <div id="ember1898" style="bottom: 185.28px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">in their myMadisonCollege Student Center. Invoices, class schedules and refund policies are sent via 
+</div>
+    <div id="ember1900" style="bottom: 166.08px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">mail to the address on file in the Student Center and via e-mail to the student's Madison College email 
+</div>
+    <div id="ember1902" style="bottom: 146.88px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">account. Account charges and class schedules are posted to the student's myMadisonCollege 
+</div>
+    <div id="ember1904" style="bottom: 127.68px; left: 103.04000000000002px; font-size: 16px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Student Center account.
+</div>
+    <div id="ember1906" style="bottom: 325.28000000000003px; left: 74.24px; font-size: 16px; font-family:&#39;Symbol&#39;;" class="ember-view dh-page-text">• 
+</div>
+    <div id="ember1908" style="bottom: 298.08000000000004px; left: 74.24px; font-size: 16px; font-family:&#39;Symbol&#39;;" class="ember-view dh-page-text"> 
+</div>
+    <div id="ember1910" style="bottom: 81.92000000000002px; left: 868px; font-size: 8px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">6Sep2016
+</div>
+    <div id="ember1912" style="bottom: 389.76px; left: 74.24px; font-size: 16px; font-family:&#39;Symbol&#39;;" class="ember-view dh-page-text">• 
+</div>
+    <div id="ember1914" style="bottom: 251.04000000000002px; left: 74.24px; font-size: 16px; font-family:&#39;Symbol&#39;;" class="ember-view dh-page-text">• 
+</div>
+    <div id="ember1916" style="bottom: 205.44000000000003px; left: 73.60000000000001px; font-size: 16px; font-family:&#39;Symbol&#39;;" class="ember-view dh-page-text">• 
+</div>
+    <div id="ember1918" style="bottom: 297.44px; left: 74.24px; font-size: 16px; font-family:&#39;Symbol&#39;;" class="ember-view dh-page-text">• 
+</div>
+    <div id="ember1920" style="bottom: 945.1200000000001px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">INSTRUCTIONS
+</div>
+    <div id="ember1922" style="bottom: 420.8px; left: 74.24px; font-size: 16px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">EXCLUSIONS - The following are not grounds for a Dispute of Charges:
+</div>
+</div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->  </div>
+    <div id="ember1449" style="left: 1039.2px;" class="ember-view dh-comment-panel"><!----></div>
+</div>
+        <div id="ember1451" style="width: 1099.2px; height: 1267.2px; top: 1299.2px;" data-model-id="538706309" class="ember-view dh-page">  <div class="dh-page-padding">
+      <div id="ember1452" style="height: 1267px; width: 979px;" class="ember-view dh-pdf-js-image"><!----><!----><canvas class="pdf-js-img-canvas" height="2218" width="1714" style="position: relative; left: 0px; top: 0px; height: 1267px; width: 979px;"></canvas></div>
+
+<!---->
+      <div id="ember1453" style="" class="ember-view dh-page-text-wrap">    <div id="ember1924" style="bottom: 741.2800000000001px; left: 77.92000000000002px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Class Number 
+</div>
+    <div id="ember1926" style="bottom: 727.84px; left: 92.32000000000001px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">(5 digits)
+</div>
+    <div id="ember1928" style="bottom: 734.5600000000001px; left: 233.44000000000003px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Class Title
+</div>
+    <div id="ember1930" style="bottom: 734.5600000000001px; left: 369.28000000000003px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Meeting Days/Times
+</div>
+    <div id="ember1932" style="bottom: 741.2800000000001px; left: 508.32px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Last Date of  
+</div>
+    <div id="ember1934" style="bottom: 727.84px; left: 507.68000000000006px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Attendance
+</div>
+    <div id="ember1936" style="bottom: 734.5600000000001px; left: 605.7600000000001px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Date Dropped / Confirmation #
+</div>
+    <div id="ember1938" style="bottom: 741.2800000000001px; left: 802.24px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Did you notify the 
+</div>
+    <div id="ember1940" style="bottom: 727.84px; left: 821.44px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">instructor?
+</div>
+    <div id="ember1942" style="bottom: 1156.64px; left: 160.64000000000001px; font-size: 38px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">MADISON COLLEGE
+</div>
+    <div id="ember1944" style="bottom: 1111.2px; left: 160.64000000000001px; font-size: 38px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Dispute of Charges Request Form
+</div>
+    <div id="ember1946" style="bottom: 1045.28px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">INSTRUCTIONS - Please send completed form along with supporting documentation in-person or by mail to the Madison College 
+</div>
+    <div id="ember1948" style="bottom: 1029.92px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Enrollment Center, 1701 Wright Street, Madison, WI 53704; or submit by fax to (608) 243-4353. 
+</div>
+    <div id="ember1950" style="bottom: 318.24px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Results you are seeking:
+</div>
+    <div id="ember1952" style="bottom: 971.04px; left: 76.48px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Name: Last 
+</div>
+    <div id="ember1954" style="bottom: 942.24px; left: 76.48px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Student ID (required)
+</div>
+    <div id="ember1956" style="bottom: 942.24px; left: 537.2800000000001px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Email
+</div>
+    <div id="ember1958" style="bottom: 913.44px; left: 724.48px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Phone
+</div>
+    <div id="ember1960" style="bottom: 913.44px; left: 76.48px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Address
+</div>
+    <div id="ember1962" style="bottom: 821.7600000000001px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Did you receive financial aid for the identified term?
+</div>
+    <div id="ember1964" style="bottom: 821.9200000000001px; left: 430.56000000000006px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Yes
+</div>
+    <div id="ember1966" style="bottom: 821.9200000000001px; left: 489.44px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">No
+</div>
+    <div id="ember1968" style="bottom: 847.84px; left: 304.64000000000004px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Term
+</div>
+    <div id="ember1970" style="bottom: 847.84px; left: 369.92px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Fall
+</div>
+    <div id="ember1972" style="bottom: 847.68px; left: 427.52px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Spring/Interim
+</div>
+    <div id="ember1974" style="bottom: 847.68px; left: 555.84px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Summer
+</div>
+    <div id="ember1976" style="bottom: 848.8000000000001px; left: 76.48px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Academic Year
+</div>
+    <div id="ember1978" style="bottom: 792.96px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Did you receive veterans benefits for the identified term?
+</div>
+    <div id="ember1980" style="bottom: 793.12px; left: 459.36000000000007px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Yes
+</div>
+    <div id="ember1982" style="bottom: 793.12px; left: 518.24px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">No
+</div>
+    <div id="ember1984" style="bottom: 590.08px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Did you discuss your situation with college instructors, advisors or staff?
+</div>
+    <div id="ember1986" style="bottom: 590.24px; left: 545.7600000000001px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Yes
+</div>
+    <div id="ember1988" style="bottom: 590.24px; left: 604.64px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">No
+</div>
+    <div id="ember1990" style="bottom: 708.64px; left: 823.84px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Yes
+</div>
+    <div id="ember1992" style="bottom: 708.64px; left: 881.9200000000001px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">No
+</div>
+    <div id="ember1994" style="bottom: 685.7600000000001px; left: 823.84px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Yes
+</div>
+    <div id="ember1996" style="bottom: 685.7600000000001px; left: 883.04px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">No
+</div>
+    <div id="ember1998" style="bottom: 664px; left: 823.84px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Yes
+</div>
+    <div id="ember2000" style="bottom: 664px; left: 883.04px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">No
+</div>
+    <div id="ember2002" style="bottom: 642.4000000000001px; left: 823.84px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Yes
+</div>
+    <div id="ember2004" style="bottom: 642.4000000000001px; left: 883.04px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">No
+</div>
+    <div id="ember2006" style="bottom: 620.64px; left: 823.84px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Yes
+</div>
+    <div id="ember2008" style="bottom: 620.64px; left: 883.04px; font-size: 11px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">No
+</div>
+    <div id="ember2010" style="bottom: 590.08px; left: 635.84px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">If yes, please describe. If no, indicate why:
+</div>
+    <div id="ember2012" style="bottom: 1001.6px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">STUDENT INFORMATION
+</div>
+    <div id="ember2014" style="bottom: 880.48px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">CLASS &amp; TERM INFORMATION
+</div>
+    <div id="ember2016" style="bottom: 457.6px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">REASON FOR DISPUTE - Please indicate why the charges are invalid (attach addition documentation if necessary):
+</div>
+    <div id="ember2018" style="bottom: 223.36px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f3&#39;;" class="ember-view dh-page-text">I understand that failure to supply truthful, adequate and complete information on this application or supporting documentation will 
+</div>
+    <div id="ember2020" style="bottom: 208px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f3&#39;;" class="ember-view dh-page-text">result in a denial of the request with no further rights to appeal.
+</div>
+    <div id="ember2022" style="bottom: 31.200000000000003px; left: 867.04px; font-size: 8px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">6Sep2106
+</div>
+    <div id="ember2024" style="bottom: 178.4px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Student Signature ____________________________________________________________________  Date ____________________________________
+</div>
+    <div id="ember2026" style="bottom: 119.68px; left: 100.64px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Power of Attorney Name
+</div>
+    <div id="ember2028" style="bottom: 149.6px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f1&#39;;" class="ember-view dh-page-text">Or:  Power of Attorney Signature*_____________________________________________________  Date ____________________________________
+</div>
+    <div id="ember2030" style="bottom: 129.28px; left: 592.64px; font-size: 10px; font-family:&#39;g_d0_f3&#39;;" class="ember-view dh-page-text">*Requests from a power of attorney require legal documentation 
+</div>
+    <div id="ember2032" style="bottom: 117.75999999999999px; left: 592.64px; font-size: 10px; font-family:&#39;g_d0_f3&#39;;" class="ember-view dh-page-text">of possession of power of attorney at the time request is submitted.
+</div>
+    <div id="ember2034" style="bottom: 971.04px; left: 450.88000000000005px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">First
+</div>
+    <div id="ember2036" style="bottom: 971.04px; left: 782.08px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Middle Initial
+</div>
+    <div id="ember2038" style="bottom: 761.7600000000001px; left: 74.24px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Classes in dispute:
+</div>
+    <div id="ember2040" style="bottom: 913.44px; left: 335.68000000000006px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">City
+</div>
+    <div id="ember2042" style="bottom: 913.44px; left: 508.48px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">State
+</div>
+    <div id="ember2044" style="bottom: 913.44px; left: 580.48px; font-size: 13px; font-family:&#39;g_d0_f2&#39;;" class="ember-view dh-page-text">Zip Code
+</div>
+    <div id="ember2046" style="bottom: 87.2px; left: 74.24px; font-size: 11px; font-family:&#39;g_d0_f4&#39;;" class="ember-view dh-page-text">Truax, Regional &amp; Metro Campus Staff Only- Date stamp, initial and email to intake@madisoncollege.edu. 
+</div>
+    <div id="ember2048" style="bottom: 73.76px; left: 74.24px; font-size: 11px; font-family:&#39;g_d0_f4&#39;;" class="ember-view dh-page-text"> 
+</div>
+    <div id="ember2050" style="bottom: 52.48px; left: 74.24px; font-size: 11px; font-family:&#39;g_d0_f3&#39;;" class="ember-view dh-page-text">Date Received ______________________________________________________  Staff Initials ________________________________
+</div>
+</div>
+
+<!---->
+<!---->
+<!---->
+          <div id="ember1467" style="left: 76.76px; top: 546.68px; width: 79.857142px; height: 14.16px; cursor: default;" data-movable-id="ff-482772198" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1476" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1485" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;">61442</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1487" style="left: 163.16px; top: 546.68px; width: 194.857142px; height: 14.16px; cursor: default;" data-movable-id="ff-482772199" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1488" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1489" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;">Systems Design</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1491" style="left: 363.64000000000004px; top: 546.68px; width: 122.857142px; height: 14.16px; cursor: default;" data-movable-id="ff-482772200" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1492" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1493" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;">Monday 5:30PM - 9:20PM</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1495" style="left: 493.08000000000004px; top: 546.68px; width: 95.857142px; height: 14.16px; cursor: default;" data-movable-id="ff-482772201" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1496" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1497" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1499" style="left: 595px; top: 546.68px; width: 194.857142px; height: 14.16px; cursor: default;" data-movable-id="ff-482772202" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1500" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1501" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;">1/24/2016</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1503" style="left: 76.76px; top: 567.8000000000001px; width: 79.44px; height: 15.440000000000001px; cursor: default;" tabindex="-1" data-movable-id="ff-482772203" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1504" style="font-size: 9.6px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1505" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1507" style="left: 163.16px; top: 567.8000000000001px; width: 193.52px; height: 15.440000000000001px; cursor: default;" tabindex="-1" data-movable-id="ff-482772204" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1508" style="font-size: 9.6px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1509" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1511" style="left: 363.64000000000004px; top: 567.8000000000001px; width: 122.32000000000001px; height: 15.440000000000001px; cursor: default;" tabindex="-1" data-movable-id="ff-482772205" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1512" style="font-size: 9.6px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1513" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1515" style="left: 493.08000000000004px; top: 567.8000000000001px; width: 94.80000000000001px; height: 15.440000000000001px; cursor: default;" tabindex="-1" data-movable-id="ff-482772206" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1516" style="font-size: 9.6px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1517" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1519" style="left: 595px; top: 567.8000000000001px; width: 193.52px; height: 15.440000000000001px; cursor: default;" tabindex="-1" data-movable-id="ff-482772207" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1520" style="font-size: 9.6px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1521" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1523" style="left: 76.76px; top: 590.36px; width: 79.44px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772208" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1524" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1525" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1527" style="left: 163.16px; top: 590.36px; width: 193.52px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772209" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1528" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1529" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1531" style="left: 363.64000000000004px; top: 590.36px; width: 122.32000000000001px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772210" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1532" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1533" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1535" style="left: 493.08000000000004px; top: 590.36px; width: 94.80000000000001px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772211" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1536" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1537" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1539" style="left: 595px; top: 590.36px; width: 193.52px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772212" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1540" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1541" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1543" style="left: 76.76px; top: 612.12px; width: 79.44px; height: 14.16px; cursor: default;" tabindex="-1" data-movable-id="ff-482772213" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1544" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1545" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1547" style="left: 163.16px; top: 612.12px; width: 193.52px; height: 14.16px; cursor: default;" tabindex="-1" data-movable-id="ff-482772214" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1548" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1549" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1551" style="left: 363.64000000000004px; top: 612.12px; width: 122.32000000000001px; height: 14.16px; cursor: default;" tabindex="-1" data-movable-id="ff-482772215" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1552" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1553" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1555" style="left: 493.08000000000004px; top: 612.12px; width: 94.80000000000001px; height: 14.16px; cursor: default;" tabindex="-1" data-movable-id="ff-482772216" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1556" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1557" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1559" style="left: 595px; top: 612.12px; width: 193.52px; height: 14.16px; cursor: default;" tabindex="-1" data-movable-id="ff-482772217" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1560" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1561" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 12px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1563" style="left: 76.76px; top: 633.24px; width: 79.44px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772218" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1564" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1565" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1567" style="left: 163.16px; top: 633.24px; width: 193.52px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772219" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1568" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1569" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1571" style="left: 363.64000000000004px; top: 633.24px; width: 122.32000000000001px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772220" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1572" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1573" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1575" style="left: 493.08000000000004px; top: 633.24px; width: 94.80000000000001px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772221" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1576" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1577" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1579" style="left: 595px; top: 633.24px; width: 193.52px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772222" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1580" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional">  <div id="ember1581" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 13px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1583" style="left: 71.64px; top: 826.68px; width: 836.7200000000001px; height: 98.857142px; cursor: default;" data-movable-id="ff-482772223" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1584" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1585" style="" class="ember-view dh-ff-textfield inactive input-border multi-line"><div class="fake-input">The class in question, Systems Design, is a renamed version of a previous class I have already taken and passed, Object Oriented Design w/ UML. I was given zero indication that this class was the same as a previous I had taken, nor was I prevented from taking it again. I only found out after a friend told me right before class, and then confirming with the teacher via email. The reason I signed up for it was because, upon signing up for classes in the fall semester last year, I saw an unfamiliar class on my program's (IT-Web Software Developer) Curriculum. I then assumed it was something I needed to take. </div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1587" style="left: 71.96000000000001px; top: 952.7599999999999px; width: 836.24px; height: 65.85714200000001px; cursor: default;" data-movable-id="ff-482772224" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1588" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1589" style="" class="ember-view dh-ff-textfield inactive input-border multi-line"><div class="fake-input">I feel that, because there was no clear indication that this was a class I had previously taken, I should not be penalized 20% of the cost for attending the first day only to find it I had already taken the class. Currently, only 80% of the charge of the class has been taken off. I would like to be given a full refund.</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1591" style="left: 149.4px; top: 277.2400000000002px; width: 294.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772225" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1592" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1593" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">Tolly</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1595" style="left: 213.72px; top: 306.04000000000013px; width: 315.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772226" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1596" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1597" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">2853197</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1599" style="left: 581.08px; top: 306.04000000000013px; width: 322.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772227" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1600" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1601" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">ltolly@madisoncollege.edu</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1603" style="left: 769.72px; top: 334.84000000000015px; width: 135.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772228" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1604" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1605" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">6085203274</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1607" style="left: 130.68px; top: 334.84000000000015px; width: 197.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772229" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1608" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1609" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">233 Cedar Dr</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1611" style="left: 406.68000000000006px; top: 431.64px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772230" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1612" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1621" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1623" style="left: 464.28000000000003px; top: 431.64px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772231" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1624" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1625" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1627" style="left: 346.20000000000005px; top: 405.7200000000001px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772232" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1628" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1629" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1631" style="left: 403.8px; top: 405.7200000000001px; width: 14.8px; height: 14.8px; cursor: default;" data-movable-id="ff-482772233" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1632" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1633" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox active">  <i class="fa fa-check"></i>
+</button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1635" style="left: 533.4px; top: 405.7200000000001px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772234" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1636" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1637" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1639" style="left: 184.28px; top: 399.48000000000013px; width: 100.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772235" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1640" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1641" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">2017</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1643" style="left: 435.48px; top: 460.44px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772236" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1644" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1645" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1647" style="left: 493.08000000000004px; top: 460.44px; width: 14.8px; height: 14.8px; cursor: default;" data-movable-id="ff-482772237" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1648" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1649" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox active">  <i class="fa fa-check"></i>
+</button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1651" style="left: 521.88px; top: 663.32px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772238" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1652" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1653" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1655" style="left: 579.48px; top: 663.32px; width: 14.8px; height: 14.8px; cursor: default;" data-movable-id="ff-482772239" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1656" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1657" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox active">  <i class="fa fa-check"></i>
+</button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1659" style="left: 799.96px; top: 545.5600000000001px; width: 14.8px; height: 14.8px; cursor: default;" data-movable-id="ff-482772240" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1660" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1661" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox active">  <i class="fa fa-check"></i>
+</button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1663" style="left: 857.88px; top: 545.5600000000001px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772241" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1664" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1665" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1667" style="left: 799.96px; top: 568.6px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772242" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1668" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1669" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1671" style="left: 857.88px; top: 568.6px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772243" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1672" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1673" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1675" style="left: 799.96px; top: 590.2px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772244" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1676" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1677" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1679" style="left: 857.88px; top: 590.2px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772245" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1680" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1681" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1683" style="left: 799.96px; top: 611.96px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772246" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1684" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1685" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1687" style="left: 857.88px; top: 611.96px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772247" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1688" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1689" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1691" style="left: 799.96px; top: 633.72px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772248" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1692" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1693" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1695" style="left: 857.88px; top: 633.72px; width: 14.8px; height: 14.8px; cursor: default;" tabindex="-1" data-movable-id="ff-482772249" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1696" style="font-size: 8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-center is-optional"><!---->
+  <button id="ember1697" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="button" tabindex="-1" class="ember-view btn btn-default dh-checkbox"><!----></button>
+  <!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1699" style="left: 70.84px; top: 683px; width: 838px; height: 95.857142px; cursor: default;" data-movable-id="ff-482772250" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1700" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1701" style="" class="ember-view dh-ff-textfield inactive input-border multi-line"><div class="fake-input">There was no need to discuss with an advisor, as dropping the class was a given.</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1703" style="left: 255.8px; top: 1128.6000000000001px; width: 326.48px; height: 21.680000000000003px; cursor: default;" tabindex="-1" data-movable-id="ff-482772251" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered"><!---->
+  <div class="content-area">
+      <div id="ember1704" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: gray;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1705" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;"><!----></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1707" style="left: 480.76000000000005px; top: 277.2400000000002px; width: 293.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772252" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1708" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1709" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">Lucas</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1711" style="left: 867.8000000000001px; top: 277.2400000000002px; width: 36.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772253" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1712" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1713" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">B</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1715" style="left: 362.36px; top: 334.84000000000015px; width: 138.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772254" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1716" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1717" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">Oregon</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1719" style="left: 540.92px; top: 334.84000000000015px; width: 31.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772255" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1720" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1721" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">WI</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+          <div id="ember1723" style="left: 639.1600000000001px; top: 334.84000000000015px; width: 77.857142px; height: 21.680000000000003px; cursor: default;" data-movable-id="ff-482772256" class="ember-view dh-movable panel dh-movable-panel resize-disabled tooltipstered" tabindex="-1"><!---->
+  <div class="content-area">
+      <div id="ember1724" style="font-size: 12.8px; font-family: Helvetica, Arial, sans-serif; color: #000000;" class="ember-view dh-formfield text-left is-optional">  <div id="ember1725" style="" class="ember-view dh-ff-textfield inactive input-border single-line"><div class="fake-input" style="line-height: 20px;">53575</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+</div>
+
+<!---->
+<!---->  </div>
+    <div id="ember1726" style="left: 1039.2px;" class="ember-view dh-comment-panel"><!----></div>
+</div>
+  </div>
+  </div>
+  <input id="ember1727" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="text" class="ember-view ember-text-field dh-hidden-tab-receiver">
+
+<!---->
+
+<textarea id="ember1736" style="touch-action: manipulation; -ms-touch-action: manipulation;" class="ember-view dh-hidden-input"><!---->
+</textarea></div>
+
+<div id="ember1745" style="" class="ember-view label label-default dh-page-number-label">Page 2 of 2</div>
+
+<!---->
+<!---->
+</div>
+
+<!---->  </div>
+  
+</div>
+
+
+<!---->
+<div id="ember678" style="" class="ember-view dh-async-download fadeout"><div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">Download Progress</h4>
+  </div>
+  <div class="panel-body">
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="NaN" style="width: NaN%;">
+        NaN%
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div><div id="dom_ruler-text_measurer" style="position: absolute; left: -10010px; top: -10px; width: 10000px; height: 0px; overflow: hidden; visibility: hidden;"><div style=""></div></div></body></html>
